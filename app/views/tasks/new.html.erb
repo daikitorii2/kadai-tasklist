@@ -1,0 +1,9 @@
+<h1>タスク追加ページ</h1>
+
+<%= form_for(@task) do |task_instance| %>
+  <%= task_instance.label :content, '追加タスク' %>
+  <%= task_instance.text_field :content %>
+  <%= task_instance.submit '追加' %>
+<% end %>
+
+<%= link_to 'タスク一覧に戻る', tasks_path %>
